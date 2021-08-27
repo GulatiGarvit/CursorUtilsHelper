@@ -79,7 +79,7 @@ Contact[] contacts = CursorUtils.with(this)
 
 ```JAVA
 
-import io.github.garvit.basicUtilityHelper.Contact;
+import io.github.garvit.basicUtilityHelper.CallLog;
 
 private void fetchCallLogs() {
 //CursorUtils.with(context).getCallLogs(count)
@@ -91,11 +91,11 @@ CallLog[] callLogs = CursorUtils.with(this)
 ```
 | Method                  | Return type         | Usage                                                                      |
 |-------------------------|---------------------|----------------------------------------------------------------------------|
-| `getPhoneNumber()`       | java.util.String | Returns the phone number present in the call log |
-| `getDate()`          | java.util.Calendar | Returns a calendar object for the call's date/ti                               |
+| `getPhoneNumber()`       | java.util.String | Returns the phone number present in the call log 			     |
+| `getDate()`          | java.util.Calendar | Returns a calendar object for the call's date/time                             |
 | `getDateString()`    | java.util.String   | Returns a stringified, readable version of the date/time (hh:mm DD:MM:YYYY)    |
 | `getDuration()`       | int | Returns the call duration (in seconds)                                                       |
-| `getCallType()`       | int | Returns the type of call (CallLog.INCOMING_TYPE or CallLog.OUTGOING_TYPE or CallLog.MISSED_TYPE                      |
+| `getCallType()`       | int | Returns the type of call (CallLog.INCOMING_TYPE or CallLog.OUTGOING_TYPE or CallLog.MISSED_TYPE  |
 
 
 ## Contributing
