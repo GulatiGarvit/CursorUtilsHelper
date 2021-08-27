@@ -1,0 +1,3 @@
+rootProject.name = "CursorUtils"
+include ':app'
+include ':CursorUtils'
