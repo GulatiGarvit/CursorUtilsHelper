@@ -4,9 +4,9 @@ CursorUtils is an Android library written in JAVA for dealing with basic android
 ### Supported
 - SMS
 - Contacts
-
-### To be supported soon
 - Call Logs
+
+### To be supported in future
 - Blocked Numbers
 - Calendar events
 
