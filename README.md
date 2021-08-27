@@ -23,7 +23,7 @@ allprojects {
 ```
 Step 2. Add the following dependency in your app level `build.gradle`
 ```bash
-implementation 'com.github.GulatiGarvit:CursorUtils:1.1.0'
+implementation 'com.github.GulatiGarvit:CursorUtils:1.0'
   ```
 
 ## Usage
