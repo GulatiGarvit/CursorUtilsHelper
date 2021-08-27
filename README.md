@@ -1,6 +1,6 @@
-# Cursor Utils
+# Cursor Utils Helper
 
-CursorUtils is an Android library written in JAVA for dealing with basic android content provider tasks in an easier way, without having to manage cursors yourself.
+CursorUtilsHelper is an Android library written in JAVA for dealing with basic android content provider tasks in an easier way, without having to manage cursors yourself.
 ### Supported
 - SMS
 - Contacts
@@ -23,7 +23,7 @@ allprojects {
 ```
 Step 2. Add the following dependency in your app level `build.gradle`
 ```bash
-implementation 'com.github.GulatiGarvit:CursorUtils:1.0'
+implementation 'com.github.GulatiGarvit:CursorUtilsHelper:v1.0'
   ```
 
 ## Usage
