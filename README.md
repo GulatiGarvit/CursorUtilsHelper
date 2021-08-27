@@ -44,8 +44,8 @@ Message[] messages = CursorUtils.with(this)
 | method             | return type        | usage                                                                                                                   |
 |--------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------|
 | `getSenderAddress()` | java.lang.String   | Returns the sender address for the message (It is the user's phone number for outgoing messages)                        |
-| `getDate()`          | java.util.Calendar | Returns a calendar object for the message's Sent/Received date                                                          |
-| `getDateString()`    | java.util.String   | Returns a stringified, readable version of the date (hh:mm DD:MM:YYYY)                                                  |
+| `getDate()`          | java.util.Calendar | Returns a calendar object for the message's Sent/Received date/time                                                          |
+| `getDateString()`    | java.util.String   | Returns a stringified, readable version of the date/time (hh:mm DD:MM:YYYY)                                                  |
 | `getMessage()`       | java.util.String   | Returns the message body                                                                                                |
 | `getMessageType()`   | java.util.String   | Returns the URI passed initially, while creating the request (Either of CursorUtils.INBOX or CursorUtils.SENT |
 
@@ -72,6 +72,31 @@ Contact[] contacts = CursorUtils.with(this)
 | `getEmails()`             | java.util.ArrayList | Returns an ArrayList<String> with all the emails under this contact        |
 | `getDateUpdated()`        | java.util.Calendar  | Returns the date the contact was last updated                              |
 | `getDateUpdaatedString()` | java.util.String    | Returns a stringified, readable version of the date (hh:mm DD:MM:YYYY)     |
+
+<br>
+
+### Reading Call Logs
+
+```JAVA
+
+import io.github.garvit.basicUtilityHelper.Contact;
+
+private void fetchCallLogs() {
+//CursorUtils.with(context).getCallLogs(count)
+//The method returns an array (CallLog[])
+CallLog[] callLogs = CursorUtils.with(this)
+				.getCallLogs(20);
+}
+
+```
+| Method                  | Return type         | Usage                                                                      |
+|-------------------------|---------------------|----------------------------------------------------------------------------|
+| `getPhoneNumber()`       | java.util.String | Returns the phone number present in the call log |
+| `getDate()`          | java.util.Calendar | Returns a calendar object for the call's date/ti                               |
+| `getDateString()`    | java.util.String   | Returns a stringified, readable version of the date/time (hh:mm DD:MM:YYYY)    |
+| `getDuration()`       | int | Returns the call duration (in seconds)                                                       |
+| `getCallType()`       | int | Returns the type of call (CallLog.INCOMING_TYPE or CallLog.OUTGOING_TYPE or CallLog.MISSED_TYPE                      |
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

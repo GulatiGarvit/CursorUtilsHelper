@@ -105,7 +105,7 @@ public class CursorUtils {
         return finalContacts;
     }
 
-    public CallLog[] getCallLogs(int number) {
+    public CallLog[] getCallLogs(int count) {
         ArrayList<CallLog> callLogs = new ArrayList<>();
         CallLog[] finalCallLogs;
 
